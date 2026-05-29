@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SNKR.</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+<div class="logo">SNKR.</div>
+
+<nav class="desktop-nav">
+<a href="#">Collections</a>
+<a href="#">Men</a>
+<a href="#">Women</a>
+<a href="#">About</a>
+</nav>
+
+<div class="header-right">
+
+<div class="cart-wrapper">
+<button id="cart-toggle" class="cart-btn">
+Cart
+<span id="cart-count">0</span>
+</button>
+</div>
+
+<button id="burger-menu" class="burger">☰</button>
+
+</div>
+</header>
+
+<nav id="mobile-menu" class="mobile-menu">
+<a href="#">Collections</a>
+<a href="#">Men</a>
+<a href="#">Women</a>
+<a href="#">About</a>
+</nav>
+
+<main class="container">
+
+<section class="gallery-section">
+
+<div class="gallery">
+
+<div class="image-wrapper">
+
+<button class="nav" id="prev">❮</button>
+
+<img
+id="main-image"
+src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop"
+alt="Sneaker"
+>
+
+<button class="nav" id="next">❯</button>
+
+</div>
+
+</div>
+
+<div class="thumbnails">
+<img class="thumb active-thumb" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=400&auto=format&fit=crop">
+<img class="thumb" src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=400&auto=format&fit=crop">
+<img class="thumb" src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?q=80&w=400&auto=format&fit=crop">
+<img class="thumb" src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=400&auto=format&fit=crop">
+</div>
+
+</section>
+
+<section class="product-details">
+
+<p class="company">Sneaker Company</p>
+
+<h1>Fall Limited Edition Sneakers</h1>
+
+<p class="description">
+Premium quality sneakers with modern minimalist design and comfort for everyday wear.
+</p>
+
+<div class="price-box">
+
+<div class="price-row">
+<h2>$125.00</h2>
+<span class="discount">50%</span>
+</div>
+
+<p class="old-price">$250.00</p>
+
+</div>
+
+<div class="actions">
+
+<div class="quantity-box">
+<button id="decrease">−</button>
+<span id="quantity">0</span>
+<button id="increase">+</button>
+</div>
+
+<button id="add-to-cart">
+Add to Cart
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+<div id="overlay"></div>
+
+<div id="cart-modal">
+
+<div class="cart-header">
+<h2>Cart</h2>
+<button id="close-modal">✕</button>
+</div>
+
+<div id="cart-items" class="cart-items">
+Your cart is empty.
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
