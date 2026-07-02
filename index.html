@@ -1,129 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>SNKR.</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Rescue</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-<div class="logo">SNKR.</div>
+    <header class="header">
+    <nav class="navbar">
 
-<nav class="desktop-nav">
-<a href="#">Collections</a>
-<a href="#">Men</a>
-<a href="#">Women</a>
-<a href="#">About</a>
-</nav>
+        <div class="container nav-inner">
 
-<div class="header-right">
+            <div class="logo">Animal Rescue</div>
 
-<div class="cart-wrapper">
-<button id="cart-toggle" class="cart-btn">
-Cart
-<span id="cart-count">0</span>
-</button>
-</div>
+            <button class="menu-btn" id="menuBtn">☰</button>
 
-<button id="burger-menu" class="burger">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="incidents.html">Incidents</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
 
-</div>
-</header>
+        </div>
 
-<nav id="mobile-menu" class="mobile-menu">
-<a href="#">Collections</a>
-<a href="#">Men</a>
-<a href="#">Women</a>
-<a href="#">About</a>
-</nav>
+    </nav>
+    </header>
 
-<main class="container">
+    <main>
 
-<section class="gallery-section">
+        <section class="hero">
+            <div class="container hero">
 
-<div class="gallery">
+                <div class="hero-content">
 
-<div class="image-wrapper">
+                    <span class="hero-tag">
+                        Helping Animals Every Day
+                    </span>
 
-<button class="nav" id="prev">❮</button>
+                    <h1>
+                        Report, Rescue and Protect Animals In Need
+                    </h1>
 
-<img
-id="main-image"
-src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop"
-alt="Sneaker"
->
+                    <p>
+                        Our platform helps connect volunteers, shelters and veterinary clinics to assist injured, abandoned and lost animals.
+                    </p>
 
-<button class="nav" id="next">❯</button>
+                    <div class="hero-buttons">
 
-</div>
+                        <a href="incidents.html" class="btn">
+                            View Reports
+                        </a>
 
-</div>
+                        <a href="partners.html" class="btn secondary-btn">
+                            Partner Clinics
+                        </a>
 
-<div class="thumbnails">
-<img class="thumb active-thumb" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=400&auto=format&fit=crop">
-<img class="thumb" src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=400&auto=format&fit=crop">
-<img class="thumb" src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?q=80&w=400&auto=format&fit=crop">
-<img class="thumb" src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=400&auto=format&fit=crop">
-</div>
+                    </div>
 
-</section>
+                </div>
 
-<section class="product-details">
+                <div class="hero-image">
 
-<p class="company">Sneaker Company</p>
+                    <img
+                        src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200"
+                        alt="Dog"
+                    >
 
-<h1>Fall Limited Edition Sneakers</h1>
+                </div>
 
-<p class="description">
-Premium quality sneakers with modern minimalist design and comfort for everyday wear.
-</p>
+            </div>
+        </section>
 
-<div class="price-box">
+        <section class="stats">
+            <div class="container stats">
 
-<div class="price-row">
-<h2>$125.00</h2>
-<span class="discount">50%</span>
-</div>
+                <div class="stat">
+                    <h3>250+</h3>
+                    <p>Animals Helped</p>
+                </div>
 
-<p class="old-price">$250.00</p>
+                <div class="stat">
+                    <h3>15</h3>
+                    <p>Partner Clinics</p>
+                </div>
 
-</div>
+                <div class="stat">
+                    <h3>100+</h3>
+                    <p>Volunteers</p>
+                </div>
 
-<div class="actions">
+            </div>
+        </section>
 
-<div class="quantity-box">
-<button id="decrease">−</button>
-<span id="quantity">0</span>
-<button id="increase">+</button>
-</div>
+        <section class="animals-section">
 
-<button id="add-to-cart">
-Add to Cart
-</button>
+            <div class="container">
 
-</div>
+                <div class="section-title">
+                    <h2>Recent Animal Reports</h2>
+                    <p>
+                        Latest reported animals needing help.
+                    </p>
+                </div>
 
-</section>
+                <div
+                    class="animals-grid"
+                    id="featuredAnimals"
+                >
+                </div>
 
-</main>
+            </div>
 
-<div id="overlay"></div>
+        </section>
 
-<div id="cart-modal">
+    </main>
 
-<div class="cart-header">
-<h2>Cart</h2>
-<button id="close-modal">✕</button>
-</div>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                Animal Rescue Project © 2026
+            </p>
+        </div>
+    </footer>
 
-<div id="cart-items" class="cart-items">
-Your cart is empty.
-</div>
+    <script src="js/main.js"></script>
 
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>

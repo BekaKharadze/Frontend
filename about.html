@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar">
+
+        <div class="container nav-inner">
+
+            <div class="logo">Animal Rescue</div>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="incidents.html">Incidents</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+</header>
+
+<main class="container">
+
+    <!-- HERO (same style logic as other pages) -->
+    <section class="about-hero">
+        <h1>About Our Mission</h1>
+        <p>
+            We connect people with local shelters and veterinary clinics to help injured and abandoned animals receive care.
+        </p>
+    </section>
+
+    <!-- CONTENT (keeps your card system) -->
+    <section class="about-content">
+
+        <div class="about-card">
+            <h2>Our Goal</h2>
+            <p>
+                Create a safer environment for animals by making reporting and rescue easier.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h2>Community Support</h2>
+            <p>
+                Volunteers, clinics and shelters work together to help animals find safety.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- CONTACT (now consistent spacing with rest of site) -->
+    <section class="contact-section">
+
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>Send us a message and we’ll respond as soon as possible</p>
+        </div>
+
+        <form id="contactForm">
+
+            <input type="text" id="name" placeholder="Your Name">
+            <small class="error" id="nameError"></small>
+
+            <input type="email" id="email" placeholder="Your Email">
+            <small class="error" id="emailError"></small>
+
+            <textarea id="message" placeholder="Your Message" rows="5"></textarea>
+            <small class="error" id="messageError"></small>
+
+            <button type="submit" class="btn">Send Message</button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>Animal Rescue Project © 2026</p>
+</footer>
+
+<script src="js/about.js"></script>
+
+</body>
+</html>
